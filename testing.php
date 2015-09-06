@@ -87,15 +87,6 @@
 </head>
 </html>
 <?php
-require 'vendor/autoload.php';
-	use Parse\ParseClient;
-	use Parse\ParseUser;
-	use Parse\ParseException;
-	use Parse\ParseQuery;
-	use Parse\ParseSessionStorage;
-	ParseClient::initialize('2Kff22DnPVhZELazNRaNBsq6Vd5fiZY3dtE8PL3A', '0rQJVlQc4TXh8xP4frrgymsUjzRyBSRPdnqR6J8X', 'na0usdMz7CN1RFycGm1fMMbnB0HzwA6xaAG6T22q');
-	
-	$query = new ParseQuery("Readings");
-	$results = $query->first();
-	echo 'Temperature: '.$results->get("temp"). 'degrees';
+	$results = 72;
+	echo 'Temperature: '.$results. 'degrees';
 ?>
